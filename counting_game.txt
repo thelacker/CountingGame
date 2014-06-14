@@ -1,0 +1,6 @@
+--Player-- --Levels-- ---Time--- --Score--- 
+  Player       2          0          0      
+  Andrey       6          9        22069    
+  Andrey       6          2        25120    
+  Andrey       6          0        27000    
+  Player       2          0         5000    

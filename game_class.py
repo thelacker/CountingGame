@@ -14,6 +14,7 @@ class Game:
     def __init__(self, levels=3, player_name="Player"):
         self.score = 0
         self.total_time = 0
+        self.player_information = None
         self.Player = collections.namedtuple("Player", "player_name levels total_time score")
         try:
             self.levels = int(levels) - 1
@@ -100,6 +101,6 @@ class Game:
             self.score = self.score_count(timer, level, self.score)
         if self.score < 0:
             self.score = 0
-        player_information = self.Player(self.player_name, self.levels, self.total_time, self.score)
-        print(player_information.player_name, ", your score is:", int(player_information.score))
+        self.player_information = self.Player(self.player_name, self.levels, self.total_time, self.score)
+        print(self.player_information.player_name, ", your score is:", int(self.player_information.score))
         pass
